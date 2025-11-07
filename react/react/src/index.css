@@ -1,0 +1,31 @@
+/* Purple-themed Chatbot UI */
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Purple theme colors */
+  --purple-primary: #8b5cf6;
+  --purple-secondary: #d946ef;
+  --pink-primary: #f472b6;
+  --lavender-light: #f5f3ff;
+  --lavender-pink: #fdf2f8;
+  --purple-dark: #4c1d95;
+  --purple-light: #c084fc;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--lavender-light) 0%, var(--lavender-pink) 100%);
+  color: var(--purple-dark);
+}

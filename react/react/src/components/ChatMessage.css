@@ -1,0 +1,52 @@
+.message {
+  margin: 0.5rem;
+  padding: 0.75rem;
+  border-radius: 6px;
+  max-width: 65%;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  font-size: 0.875rem;
+}
+
+.user-message {
+  background-color: #6b46c1;
+  background-image: linear-gradient(to right, #6b46c1, #805ad5);
+  color: white;
+  margin-left: auto;
+  padding: 0.5rem 0.75rem;
+  max-width: 50%;
+}
+
+.user-content {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.user-icon {
+  flex-shrink: 0;
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+.user-text {
+  font-size: 0.85rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bot-message {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+}
+
+.message-content {
+  margin-bottom: 0.5rem;
+}
+
+.user-message .message-content {
+  margin: 0;
+  padding: 0.25rem 0;
+}
+
+/* Rest of your existing CSS styles... */

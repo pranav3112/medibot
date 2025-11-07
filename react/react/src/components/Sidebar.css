@@ -1,0 +1,145 @@
+/* Sidebar Overlay */
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1998;
+  cursor: pointer;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -320px;
+  width: 320px;
+  height: 100vh;
+  background: linear-gradient(180deg, var(--purple-primary), var(--purple-dark));
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  transition: left 0.3s ease;
+  z-index: 1999;
+  overflow-y: auto;
+  box-shadow: 2px 0 20px rgba(139, 92, 246, 0.3);
+}
+
+.sidebar-open {
+  left: 0;
+}
+
+/* Sidebar Header */
+.sidebar-header {
+  padding: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.new-chat-button {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.new-chat-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
+}
+
+.plus-icon {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Sidebar Content */
+.sidebar-content {
+  padding: 0;
+}
+
+.chat-history h3 {
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  padding: 20px 20px 10px;
+  opacity: 0.9;
+}
+
+.no-history {
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  font-style: italic;
+}
+
+/* Chat List */
+.chat-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-item {
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border-left: 3px solid transparent;
+}
+
+.chat-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-left-color: var(--pink-primary);
+}
+
+.chat-title {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.chat-timestamp {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 280px;
+    left: -280px;
+  }
+  
+  .sidebar-header {
+    padding: 15px;
+  }
+  
+  .new-chat-button {
+    padding: 10px 14px;
+    font-size: 13px;
+  }
+  
+  .chat-history h3 {
+    padding: 15px 15px 8px;
+    font-size: 15px;
+  }
+  
+  .chat-item {
+    padding: 10px 15px;
+  }
+}
